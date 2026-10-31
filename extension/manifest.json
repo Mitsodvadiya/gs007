@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "GastroAGI Chunk Uploader",
+  "version": "1.0.0",
+  "description": "Turn a PDF into GastroAGI knowledge chunks with ChatGPT and fill them into the admin panel.",
+  "permissions": ["sidePanel", "storage"],
+  "host_permissions": ["http://127.0.0.1:8765/*"],
+  "background": { "service_worker": "background.js" },
+  "side_panel": { "default_path": "panel.html" },
+  "action": {
+    "default_title": "GastroAGI Chunk Uploader",
+    "default_icon": { "16": "icons/16.png", "32": "icons/32.png", "48": "icons/48.png", "128": "icons/128.png" }
+  },
+  "icons": { "16": "icons/16.png", "32": "icons/32.png", "48": "icons/48.png", "128": "icons/128.png" }
+}

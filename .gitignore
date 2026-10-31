@@ -1,0 +1,12 @@
+# PDFs and ChatGPT replies from real runs
+program/jobs/
+program/responses/
+
+# written by the ChatGPT controller
+program/.server.json
+program/sessions.json
+*.log
+
+__pycache__/
+*.pyc
+.claude/

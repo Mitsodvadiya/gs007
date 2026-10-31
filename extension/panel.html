@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GastroAGI Chunks</title>
+  <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+  <header>
+    <img src="icons/48.png" alt="" width="28" height="28">
+    <h1>Chunk Uploader</h1>
+    <span id="server" class="pill">Checking…</span>
+  </header>
+
+  <p id="offline" class="notice" hidden>
+    The program is not running. Double-click the GastroAGI Chunk Uploader icon on your desktop, then this panel connects by itself.
+  </p>
+
+  <p id="sendError" class="notice" hidden></p>
+  <p id="notice" class="notice" hidden></p>
+
+  <section>
+    <label id="drop" class="drop">
+      <input id="files" type="file" accept="application/pdf,.pdf" multiple>
+      <strong>Choose PDF files</strong>
+      <span>or drop them here</span>
+    </label>
+    <ul id="picked"></ul>
+    <p id="pickedCount"></p>
+
+    <label class="check">
+      <input id="auto" type="checkbox">
+      <span>Upload automatically <small>Chunks with a warning still wait for your review.</small></span>
+    </label>
+
+    <button id="start" class="primary" disabled>Start</button>
+  </section>
+
+  <section id="accountsBox" hidden>
+    <h2 id="accountsTitle">ChatGPT accounts</h2>
+    <ul id="accounts"></ul>
+  </section>
+
+  <section id="jobsBox" hidden>
+    <h2>Progress</h2>
+    <div id="counts" class="counts"></div>
+    <h2>PDFs</h2>
+    <div id="jobs"></div>
+    <p id="hidden"></p>
+  </section>
+
+  <script src="panel.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "port": 8765,
+  "chatgpt_profiles": "auto",
+  "skip_profiles": [],
+  "pdfs_per_message": 3,
+  "panel_profile": "Default",
+  "panel_url": "https://admin.gastroagi.com/upload-documents"
+}
